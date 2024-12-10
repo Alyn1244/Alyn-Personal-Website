@@ -1,0 +1,113 @@
+body{
+    background-image: url(../img/bg8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+    font-family: cursive;
+}
+.navbar{
+    height: 25px;
+    background: transparent;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+.navbar a{
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(252, 206, 237);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-weight: bold;
+    padding: 30px;
+    text-decoration: none;
+    
+}
+.navbar a:hover{
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgb(237, 131, 205);
+    padding: 10px;
+}
+.name{
+    font-size: 40px;
+    font-family: cursive;
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    padding-left: 80px;
+    padding-top: 80px;
+    text-align: center;
+}
+.gallery-section{
+    padding-top: 50px;
+    width: 100%;
+}
+.gallery-section .gallery-wrap{
+    padding-top: 10px;
+    
+}
+.gallery-section .gallery-wrap .gallery-images{
+    width: 80%;
+    margin:0 auto;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery{
+    width: 100%;
+    position: relative;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .image-section img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #f47dcc;
+    padding: 5px;
+    display: block;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0,0, 0.5);
+    color: #d8c9d3;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .caption:hover{
+    opacity: 1;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .caption p{
+    font-size: 15px;
+    font-family: cursive;
+}
+@media screen  and (max-width: 992px){
+    .gallery-section .gallery-wrap .gallery-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen  and (max-width: 568px){
+    .gallery-section .gallery-wrap .gallery-images{
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        margin-left: 10px;
+    }
+    .navbar a{
+        padding-left: 12px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin:0%;
+        font-size: 13px;   
+    }
+}

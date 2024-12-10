@@ -1,0 +1,225 @@
+body{
+    background-image: url(../img/bg8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+    font-family: cursive;
+}
+.navbar{
+    height: 25px;
+    background: transparent;
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.navbar a{
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(252, 206, 237);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-weight: bold;
+    padding: 30px;
+    text-decoration: none;
+    
+}
+.navbar a:hover{
+    text-decoration: none;
+    border-radius: 30px;
+    background: rgb(237, 131, 205);
+    padding: 10px;
+}
+.img-fluid{
+    position: absolute;
+    width: 440px;
+    margin-left: 200px;
+    height: 380px;
+    top: 230px;
+    border-radius: 25%;
+    border: 5px solid rgb(213, 64, 174);
+}
+.about{
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 650px;
+    padding-top: 80px;
+}
+.para{
+    font-family: sans-serif;
+    color: #fcfc;
+    background-color: rgba(226, 43, 174, 0.344);
+    font-size: 18px;
+    border-radius: 20px;
+    line-height: 25px;
+    padding: 30px;
+    margin-left: 730px;
+    margin-top: 80px;
+    width: 90%;
+}
+.hob{
+    margin-left: 10px;
+    padding-top: 2px;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-weight: bold;
+}
+.hobbies img{
+    padding: 40px;
+    height: 400px;
+    margin-left: 80px;
+    align-items: center;
+}
+.hobbies span{
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(252, 189, 222);
+    text-shadow: black 1px 2px 1px;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+.works{
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-weight: bold;
+}
+.recent-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.work-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+  }
+  
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+.work-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+  
+.work-item:hover .overlay {
+    opacity: 1;
+}
+  
+.overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #f47dcc;
+}
+  
+.overlay p {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+@media (max-width: 768px) {
+    .header .row {
+          text-align: center;
+      }
+      .header .col-md-6 h1 {
+          text-align: center;
+      }
+  
+      .header h1 {
+          font-size: 2rem;
+      }
+  
+      .header p {
+          font-size: 1rem;
+      }
+  
+      .overlay h3 {
+          font-size: 1.2rem;
+      }
+  
+      .overlay p {
+          font-size: 0.9rem;
+      }
+  }
+  
+@media (max-width: 768px){
+    .navbar{
+        margin-left: 10px;
+    }
+    .navbar a{
+        padding-left: 12px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin:0%;
+        font-size: 13px;   
+    }
+    .about{
+        font-size: 7vw;
+        margin-left: 140px;
+    }
+    .img-fluid{
+        width: 250px;
+        margin-left: 120px;
+        top: 220px;
+    }
+    .para{
+        font-size: 2vw;
+        margin-left: 55px;
+        width: 80%;
+        margin-top: 390px;
+        line-height: 16px;
+    }
+    .hob{
+        font-size: 5vw;
+    }
+    .hobbies img{
+        padding: 5px;
+        height: 150px;
+        margin-left: 5px;
+    }
+    .hobbies span{
+        font-size: 3vw;
+        padding-left: 7px;
+    }
+    .works{
+        margin-left: 5px;
+        font-size: 5vw;
+        padding-top: 20px;
+    }
+}
