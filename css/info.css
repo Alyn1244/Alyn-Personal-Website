@@ -8,10 +8,11 @@ body{
     font-family: cursive;
 }
 .navbar{
-    height: 25px;
-    background: transparent;
+    height: 55px;
+    background-color: rgb(252, 206, 237 0.5);
     margin-left: 700px;
-    margin-top: 30px;
+    margin-top: 10px;
+    
 }
 .navbar a{
     font-size: 20px;
@@ -19,15 +20,13 @@ body{
     color: rgb(252, 206, 237);
     text-shadow: rgb(189, 79, 149) 1px 2px 1px;
     font-weight: bold;
-    padding: 30px;
+    padding: 20px;
     text-decoration: none;
     
 }
 .navbar a:hover{
-    text-decoration: none;
-    border-radius: 30px;
+    border-radius: 40px;
     background: rgb(237, 131, 205);
-    padding: 10px;
 }
 .img-fluid{
     position: absolute;
@@ -180,14 +179,14 @@ body{
   
 @media (max-width: 768px){
     .navbar{
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .navbar a{
-        padding-left: 12px;
+        padding-left: 22px;
         padding-bottom: 10px;
         padding-top: 10px;
         margin:0%;
-        font-size: 13px;   
+        font-size: 2vw;   
     }
     .about{
         font-size: 7vw;
